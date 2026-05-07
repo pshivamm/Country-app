@@ -7,7 +7,7 @@ export const Contact = () => {
 
 
     return (
-        <section className="hero py-10 md:py-12 px-4">
+        <section className="bg-white py-10 md:py-12 px-4">
             <div className="container mx-auto">
                 <h2 className="text-2xl font-semibold text-center mb-2 text-blue-900">
                     Contact Us
@@ -16,11 +16,12 @@ export const Contact = () => {
                     Please fill the form below to contact us.
                 </p>
 
-                <div className="max-w-96 mx-auto  bg-white border border-gray-200 rounded-lg p-8">
+                <div className="max-w-96 mx-auto  bg-blue-100
+                00 border border-blue-200 rounded-xl px-5 py-6 md:px-8 md:py-8 placeholder-yellow-800">
                     <form action={handleFormSubmit}>
                         <input
                             type="text"
-                            className="mb-3 border border-gray-300 rounded-md w-full px-3 py-3 text-xs text-gray-600 leading-tight focus:outline-red-600"
+                            className="mb-3 bg-white border border-gray-300 rounded-md w-full px-3 py-3 text-xs text-gray-600 leading-tight focus:outline-red-600"
                             placeholder="Enter Your Name"
                             name="username"
                             autoComplete="false"
@@ -28,7 +29,7 @@ export const Contact = () => {
                         />
                         <input
                             type="email"
-                            className="mb-3 border border-gray-300 rounded-md w-full px-3 py-3 text-xs text-gray-600 leading-tight focus:outline-red-600"
+                            className="mb-3 bg-white border border-gray-300 rounded-md w-full px-3 py-3 text-xs text-gray-600 leading-tight focus:outline-red-600"
                             placeholder="Enter Your Email"
                             name="email"
                             autoComplete="false"
@@ -36,7 +37,7 @@ export const Contact = () => {
                         />
                         <textarea
                             type="email"
-                            className="border border-gray-300 rounded-md w-full px-3 py-3 text-xs text-gray-600 leading-tight focus:outline-red-600"
+                            className="bg-white border border-gray-300 rounded-md w-full px-3 py-3 text-xs text-gray-600 leading-tight focus:outline-red-600"
                             rows="3"
                             placeholder="Enter Your Message"
                             name="message"

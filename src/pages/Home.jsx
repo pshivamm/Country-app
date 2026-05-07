@@ -9,7 +9,7 @@ export const Home = () => {
         <main>
             <HeroSection />
             <About />
-            <Country />
+            {/* <Country /> */}
             <Contact />
         </main>
     );

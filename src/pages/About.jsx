@@ -15,7 +15,7 @@ export const About = () => {
                     {CountryData.map((country) => {
                         const { Id, Name, Capital, Population, PopularFacts } = country;
                         return (
-                            <div className="cards bg-white p-6 rounded-lg border-gray-200 border" key={Id}>
+                            <div className="cards bg-white p-6 rounded-xl border-gray-200 border" key={Id}>
                                 <h3 className="text-md font-semibold md:text-lg mb-1 text-blue-900">
                                     {Name}
                                 </h3>
