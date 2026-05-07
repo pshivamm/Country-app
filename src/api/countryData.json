@@ -1,0 +1,48 @@
+[
+    {
+        "Id" : "1",
+        "Name" : "India",
+        "Capital" : "New Delhi",
+        "Population" : "1.4 Billion",
+        "PopularFacts" : "India is the world's largest democracy and has the largest population in the world."
+    },
+
+    {
+        "Id" : "2",
+        "Name" : "United States",
+        "Capital" : "Washington, D.C.",
+        "Population" : "331 Million",
+        "PopularFacts" : "The United States is the third largest country in the world by land area and has a diverse culture influenced by its inhabitants."
+    },
+
+    {
+        "Id" : "3",
+        "Name" : "China",
+        "Capital" : "Beijing",
+        "Population" : "1.4 Billion",
+        "PopularFacts" : "China is the world's most populous country and has a rich history that dates back thousands of years."
+    },
+    
+    {
+        "Id" : "4",
+        "Name" : "Brazil",
+        "Capital" : "Brasília",
+        "Population" : "213 Million",
+        "PopularFacts" : "Brazil is the largest country in South America and is known for its vibrant culture, including samba music and the Amazon rainforest."
+    },
+
+    {
+        "Id" : "5",
+        "Name" : "Australia",
+        "Capital" : "Canberra",
+        "Population" : "25 Million",
+        "PopularFacts" : "Australia is the world's sixth largest country by land area and is home to unique wildlife such as kangaroos and koalas."
+    },
+    {
+        "Id" : "6",
+        "Name" : "Japan",
+        "Capital" : "Tokyo",
+        "Population" : "126 Million",
+        "PopularFacts" : "Japan is an island nation known for its blend of traditional culture and modern technology, as well as its cherry blossoms and sushi cuisine."
+    }
+]

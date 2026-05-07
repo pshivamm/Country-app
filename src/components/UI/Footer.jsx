@@ -1,3 +1,9 @@
 export const Footers = () => {
- return <h1>Footers</h1>;
+    return (
+        <footer className="bg-white border-b border-gray-300 py-3 px-4">
+            <div className="container">
+                <p className="text-center text-xs text-gray-600">© 2024 Country App. All rights reserved.</p>
+            </div>
+        </footer >
+    );
 }
