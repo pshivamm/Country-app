@@ -1,6 +1,6 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { AppLayout } from "./components/AppLayout";
+import { AppLayout } from "./components/Layout/AppLayout";
 
 import "./App.css";
 
@@ -8,11 +8,13 @@ import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
 import { Country } from "./pages/Country";
+import { ErrorPage } from "./pages/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <AppLayout />,
+    errorElement: <ErrorPage/>,
     children: [
       {
         path: "/",
