@@ -1,18 +1,18 @@
 [
     {
-        "icon": "MdPlace",
+        "icon": "FaLocationDot",
         "title": "Find Us",
         "details": "Delhi, India"
     },
 
     {
-        "icon": "IoCallSharp",
+        "icon": "FaPhoneVolume",
         "title": "Call Us",
         "details": "+91 123456789"
     },
 
     {
-        "icon": "IoMailSharp",
+        "icon": "FaEnvelope",
         "title": "Email Us",
         "details": "shivampandey.self@gmail.com"
     }
