@@ -1,12 +1,34 @@
+import {NavLink} from 'react-router-dom';
 
 
 export const CountryCard = ({ country }) => {
-    // const{ country} = country;
+    const { flags, name, population, region, capital, currencies } = country;
     return (
         <div className="cards bg-white p-6 rounded-xl border-gray-200 border" >
+            <img src={flags.svg} alt="{flags.alt}" className="w-full h-[171px] mb-4 rounded-lg border-gray-200 border object-cover" />
             <h3 className="text-md font-semibold md:text-lg mb-1 text-blue-900">
-                {country.name.common}
+                {name.common.length > 30 ? name.common.slice(0, 30) + "..." : name.common}
             </h3>
+            <p className="text-sm leading-base md:leading-6 text-gray-500">
+                <span className="text-xs font-medium text-gray-400">Population: </span>
+                {population.toLocaleString()}
+            </p>
+            <p className="text-sm leading-base md:leading-6 text-gray-500">
+                <span className="text-xs font-medium text-gray-400">Region: </span>
+                {region}
+            </p>
+            <p className="text-sm leading-base md:leading-6 text-gray-500">
+                <span className="text-xs font-medium text-gray-400">Capital: </span>
+                {capital[0]}
+            </p>
+            <NavLink to={'/country/${name.common}'}>
+                <button
+                    className='flex items-center justify-center text-xs md:text-sm px-3 py-1 mt-4 rounded-md bg-blue-500 text-white hover:bg-blue-700 transition duration-600 ease-in-out'
+                    type="submit"
+                    value="send">
+                    Read More
+                </button>
+            </NavLink>
         </div>
     );
 }
