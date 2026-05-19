@@ -20,7 +20,7 @@ export const CountryCard = ({ country }) => {
                 <span className="text-xs font-medium text-gray-400">Capital: </span>
                 {capital[0]}
             </p>
-            <NavLink to={`/country/${encodeURIComponent(name.common)}`}>
+            <NavLink to={'/country/${name.common}'}>
                 <button
                     className='flex items-center justify-center text-xs md:text-sm px-3 py-1 mt-4 rounded-md bg-blue-500 text-white hover:bg-blue-700 transition duration-600 ease-in-out'
                     type="submit"

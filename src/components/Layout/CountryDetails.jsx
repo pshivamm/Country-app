@@ -1,8 +1,29 @@
+import { useEffect, useState, useTransition } from 'react';
 import { useParams } from "react-router-dom";
+import { Loader } from '../UI/Loader.jsx';
+import { getCountryIndvData } from '../../api/postApi.jsx';
+
 
 
 export const CountryDetails = () => {
     const params = useParams();
+
+    const [isPending, startTransition] = useTransition()
+    const [country, setCountry] = useState([]);
+
+
+    useEffect(() => {
+        startTransition(async () => {
+            const res = await getCountryIndvData(params.id);
+            // setCountry(res);
+            console.log(res);
+        });
+    }, []);
+
+
+
+
+    if (isPending) return <Loader />;
     console.log(params);
     return (
         <section className="hero py-10 md:py-12 px-4">
