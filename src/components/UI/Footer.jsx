@@ -1,4 +1,5 @@
 import footerApi from '../../api/footerApi.json';
+import { NavLink } from 'react-router-dom';
 import {
     FaLocationDot,
     FaPhoneVolume,
@@ -46,7 +47,10 @@ export const Footers = () => {
             </div>
             <div className="footerBtm bg-gray-100 border-t border-gray-300 py-3 px-4">
                 <p className="text-center text-xs text-gray-600">
-                    Country App &copy; 2026. All rights reserved.
+                    Country App &copy; 2026. All rights reserved.&nbsp; 
+                    <NavLink to="/" className="font-bold text-blue-600" target='_blank'>
+                    Country App
+                    </NavLink>
                 </p>
             </div>
         </footer>
